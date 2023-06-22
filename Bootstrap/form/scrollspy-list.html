@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Scrollspy-List</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" width="40px"
+                        alt="Bootstrap" class="d-inline-block align-top"> Bootstrap
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar"
+                    aria-expanded="false" aria-controls="myNavbar">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto" id="myNavbar">
+                        <li class="nav-item"><a href="#homeSection" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#aboutSection" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#courseSection" class="nav-link">Course</a></li>
+                        <li class="nav-item"><a href="#contactSection" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="list-group" id="myList">
+                    <a href="#intro" class="list-group-item list-group-item-action active">Introduction to bootstrap</a>
+                    <a href="#grid" class="list-group-item list-group-item-action">Grids</a>
+                    <a href="#components" class="list-group-item list-group-item-action">Components</a>
+                    <a href="#utilities" class="list-group-item list-group-item-action">Utilities</a>
+                    <a href="#spinners" class="list-group-item list-group-item-action">Spinners</a>
+                </ul>
+            </div>
+            <div class="col-md-8" style="height: 450px; overflow-y:scroll" data-bs-spy="scroll" data-bs-target="#myList" data-bs-offset="0" tabindex="0">
+                <div class="bg-warning p-3">
+                    <h1 id="intro">Introduction to bootstrap</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit harum culpa voluptate possimus quaerat distinctio ipsam ullam reiciendis asperiores esse doloremque, quae eveniet nostrum dolores in excepturi architecto quisquam.
+                    Beatae soluta, corporis perferendis amet veritatis sunt deleniti ipsam facere atque cum dicta aliquid repudiandae saepe ad laboriosam voluptates fuga odio tenetur, incidunt, error nihil ipsa vero est laudantium? Provident?
+                    Placeat minima, facilis impedit iste, unde magni eos qui itaque vero quos architecto saepe aliquid sapiente quia similique odit totam ea corrupti culpa repellat nisi neque. Provident quod sit at.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit harum culpa voluptate possimus quaerat distinctio ipsam ullam reiciendis asperiores esse doloremque, quae eveniet nostrum dolores in excepturi architecto quisquam.
+                        Beatae soluta, corporis perferendis amet veritatis sunt deleniti ipsam facere atque cum dicta aliquid repudiandae saepe ad laboriosam voluptates fuga odio tenetur, incidunt, error nihil ipsa vero est laudantium? Provident?
+                        Placeat minima, facilis impedit iste, unde magni eos qui itaque vero quos architecto saepe aliquid sapiente quia similique odit totam ea corrupti culpa repellat nisi neque. Provident quod sit at.</p></p>
+                </div>
+                <div class="bg-info p-3">
+                    <h1 id="grid">Bootstrap grids</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit harum culpa voluptate possimus quaerat distinctio ipsam ullam reiciendis asperiores esse doloremque, quae eveniet nostrum dolores in excepturi architecto quisquam.
+                    Beatae soluta, corporis perferendis amet veritatis sunt deleniti ipsam facere atque cum dicta aliquid repudiandae saepe ad laboriosam voluptates fuga odio tenetur, incidunt, error nihil ipsa vero est laudantium? Provident?
+                    Placeat minima, facilis impedit iste, unde magni eos qui itaque vero quos architecto saepe aliquid sapiente quia similique odit totam ea corrupti culpa repellat nisi neque. Provident quod sit at.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit harum culpa voluptate possimus quaerat distinctio ipsam ullam reiciendis asperiores esse doloremque, quae eveniet nostrum dolores in excepturi architecto quisquam.
+                        Beatae soluta, corporis perferendis amet veritatis sunt deleniti ipsam facere atque cum dicta aliquid repudiandae saepe ad laboriosam voluptates fuga odio tenetur, incidunt, error nihil ipsa vero est laudantium? Provident?
+                        Placeat minima, facilis impedit iste, unde magni eos qui itaque vero quos architecto saepe aliquid sapiente quia similique odit totam ea corrupti culpa repellat nisi neque. Provident quod sit at.</p></p>
+                </div>
+                <div class="bg-primary p-3">
+                    <h1 id="components">Bootstrap Components</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit harum culpa voluptate possimus quaerat distinctio ipsam ullam reiciendis asperiores esse doloremque, quae eveniet nostrum dolores in excepturi architecto quisquam.
+                    Beatae soluta, corporis perferendis amet veritatis sunt deleniti ipsam facere atque cum dicta aliquid repudiandae saepe ad laboriosam voluptates fuga odio tenetur, incidunt, error nihil ipsa vero est laudantium? Provident?
+                    Placeat minima, facilis impedit iste, unde magni eos qui itaque vero quos architecto saepe aliquid sapiente quia similique odit totam ea corrupti culpa repellat nisi neque. Provident quod sit at.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit harum culpa voluptate possimus quaerat distinctio ipsam ullam reiciendis asperiores esse doloremque, quae eveniet nostrum dolores in excepturi architecto quisquam.
+                        Beatae soluta, corporis perferendis amet veritatis sunt deleniti ipsam facere atque cum dicta aliquid repudiandae saepe ad laboriosam voluptates fuga odio tenetur, incidunt, error nihil ipsa vero est laudantium? Provident?
+                        Placeat minima, facilis impedit iste, unde magni eos qui itaque vero quos architecto saepe aliquid sapiente quia similique odit totam ea corrupti culpa repellat nisi neque. Provident quod sit at.</p></p>
+                </div>
+                <div class="bg-dark text-white p-3">
+                    <h1 id="utilities">Bootstrap Utilities</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit harum culpa voluptate possimus quaerat distinctio ipsam ullam reiciendis asperiores esse doloremque, quae eveniet nostrum dolores in excepturi architecto quisquam.
+                    Beatae soluta, corporis perferendis amet veritatis sunt deleniti ipsam facere atque cum dicta aliquid repudiandae saepe ad laboriosam voluptates fuga odio tenetur, incidunt, error nihil ipsa vero est laudantium? Provident?
+                    Placeat minima, facilis impedit iste, unde magni eos qui itaque vero quos architecto saepe aliquid sapiente quia similique odit totam ea corrupti culpa repellat nisi neque. Provident quod sit at.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit harum culpa voluptate possimus quaerat distinctio ipsam ullam reiciendis asperiores esse doloremque, quae eveniet nostrum dolores in excepturi architecto quisquam.
+                        Beatae soluta, corporis perferendis amet veritatis sunt deleniti ipsam facere atque cum dicta aliquid repudiandae saepe ad laboriosam voluptates fuga odio tenetur, incidunt, error nihil ipsa vero est laudantium? Provident?
+                        Placeat minima, facilis impedit iste, unde magni eos qui itaque vero quos architecto saepe aliquid sapiente quia similique odit totam ea corrupti culpa repellat nisi neque. Provident quod sit at.</p></p>
+                </div>
+                <div class="bg-danger p-3">
+                    <h1 id="spinners">Bootstrap Spinners</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit harum culpa voluptate possimus quaerat distinctio ipsam ullam reiciendis asperiores esse doloremque, quae eveniet nostrum dolores in excepturi architecto quisquam.
+                    Beatae soluta, corporis perferendis amet veritatis sunt deleniti ipsam facere atque cum dicta aliquid repudiandae saepe ad laboriosam voluptates fuga odio tenetur, incidunt, error nihil ipsa vero est laudantium? Provident?
+                    Placeat minima, facilis impedit iste, unde magni eos qui itaque vero quos architecto saepe aliquid sapiente quia similique odit totam ea corrupti culpa repellat nisi neque. Provident quod sit at.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit harum culpa voluptate possimus quaerat distinctio ipsam ullam reiciendis asperiores esse doloremque, quae eveniet nostrum dolores in excepturi architecto quisquam.
+                        Beatae soluta, corporis perferendis amet veritatis sunt deleniti ipsam facere atque cum dicta aliquid repudiandae saepe ad laboriosam voluptates fuga odio tenetur, incidunt, error nihil ipsa vero est laudantium? Provident?
+                        Placeat minima, facilis impedit iste, unde magni eos qui itaque vero quos architecto saepe aliquid sapiente quia similique odit totam ea corrupti culpa repellat nisi neque. Provident quod sit at.</p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap-popover.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script>
+        // Tooltip
+        let tooltipTargetlist = [].slice.call(
+            document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        let tooltiplist = tooltipTargetlist.map((tooltipTriggerel) => {
+            return new bootstrap.Tooltip(tooltipTriggerel)
+        });
+        // popover
+        let popoverTargetlist = [].slice.call(
+            document.querySelectorAll('[data-bs-toggle="popover"]')
+        );
+        let popoverlist = popoverTargetlist.map((popoverTriggerel) => {
+            return new bootstrap.Popover(popoverTriggerel, {
+                trigger: "focus"
+            })
+        });
+
+        //Progress bar
+        let upload = document.getElementById("uploadProgress");
+        setInterval(() => {
+            upload.classList.toggle("progress-bar-animated")
+        }, 1000)
+
+
+
+        // let popover1 = new bootstrap.Popover(triggerElement1, {
+        //     trigger: "focus"
+        // });
+
+        //Scrollspy
+
+        let scrollSpy = new bootstrap.ScrollSpy(document.body,{
+            target : "#myList",
+        })
+
+    </script>
+</body>
+
+</html>
