@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+
+:root {
+    --red: #da2929;
+    --yellow: #faa307;
+    --White: #ffffff;
+    --green: #30b241;
+
+}
+
+body {
+    margin: 0;
+}
+
+.landing {
+    background-image: url("./images/rice.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+header {
+    display: flex;
+    font: bold;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+header #logo {
+    flex: 1;
+    font-size: 3rem;
+
+}
+nav{
+    font-size: 1.7rem;
+    display: flex;
+    min-width: 500px;
+    justify-content:right;
+    align-items: center;
+    flex: 1;
+}
+nav a{
+    flex: 1;
+}
+header a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header a:hover {
+    color: var(--yellow);
+}
+
+.maintext{
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    position: relative;
+}
+.maintext .para1{
+    font-size: 3rem;
+    color: var(--yellow);
+    text-align: center;
+    align-self: center;
+    flex-basis: 0;
+    flex: 2;
+}
+.maintext .para2{
+    font-size: 1.75rem;
+    align-self: left;
+    justify-self: end;
+    flex-basis: 0;
+    flex: 3;
+    top: 50px;
+    width: 250px;
+}
+.maintext button{
+    width: 150px;
+    height: 40px;
+    background-color: var(--red);
+    color: var(--White);
+    font-family: inherit;
+    font-size: 1.75rem;
+    align-self: center;
+    justify-self: end;
+    border-radius: 10px;
+    box-shadow: 5px;
+    transition: linear;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+button:hover{
+    background-color: var(--green);
+    width: 300px;
+    
+}
+#menu-heading,#loc-heading{
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(to right,rgb(13, 13, 13),rgb(107, 103, 103));
+    text-align: center;
+    color: var(--green);
+}
+table{
+    width: 100%;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 0 20px 0 20px;
+    background: linear-gradient(to right,rgb(13, 13, 13),rgb(107, 103, 103));
+    color: var(--White);
+    align-items: start; 
+    justify-content: center;
+    gap:40px;
+}
+.menu th{
+    font-size: 1.5rem;
+    color: var(--yellow);
+    grid-column: span 2;
+    
+}
+.menu tr{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.menu tr td{
+    display: grid;
+    row-gap: 40px;
+    margin-top: 1em;
+}
+td:nth-child(even){
+    justify-content: end;
+}
+.locations{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background: linear-gradient(to right,rgb(13, 13, 13),rgb(107, 103, 103));
+    color: var(--White);
+    justify-content: center;
+    padding: 20px;
+}
+h3{
+    font-size: 1.5rem;
+    color: var(--yellow);
+    
+}
+address{
+    line-height: 30px;
+}
+footer{
+    background-color: black;
+    color: wheat;
+}
+footer p{
+    margin: 0;
+
+}
