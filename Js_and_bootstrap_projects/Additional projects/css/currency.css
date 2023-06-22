@@ -1,0 +1,26 @@
+.container{
+    margin-top: 50px;
+    /* width: 600px; */
+}
+#head{
+    color: rgb(212, 204, 116);
+}
+#item1,#item2{
+    background-color: rgb(226, 146, 48);
+    color:white;
+    border-radius: 10px;
+    border-color: black;
+    height: 50px;
+}
+#input1,#input2{
+    background-color: rgb(132, 145, 182);
+    color: wheat;
+    border-radius: 10px;
+    border-color: black;
+    height: 30px;
+}
+/* 
+.card{
+    width: 300px;
+    
+} */

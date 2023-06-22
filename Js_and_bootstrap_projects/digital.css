@@ -1,0 +1,9 @@
+.container{
+    font-size: 2rem;
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 22%, rgba(0,212,255,1) 58%);
+}
+
+.clock{
+    border: 2px solid rgb(236, 228, 9);
+    padding: 10px;
+}

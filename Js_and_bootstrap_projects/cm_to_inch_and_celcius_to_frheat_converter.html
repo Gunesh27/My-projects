@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>length converter</title>
+</head>
+
+<body>
+    <div class="container d-flex">
+        <div class="mx-auto">
+            <div class="container mt-5" style="width: 300px;">
+                <div class="card bg-dark">
+                    <div class="card-header text-center">
+                        <h4 class="text-danger">Length Converter</h4>
+                        <small class="lead text-danger">Cm to inches</small>
+
+
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="input" class="text-danger mb-2">Length</label>
+                                <div class="input-group">
+                                    
+                                    <input type="text" class="form-control" name="input" id="input"
+                                        >
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">cm</span>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="form-group text-center mt-3 d-grid">
+                                <button class="btn btn-outline-danger" onclick="convert()"
+                                    type="button">Convert</button>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="output" id="output"
+                                    placeholder="Length in inches">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="mx-auto">
+            <div class="container my-5" style="width: 300px;">
+                <div class="card bg-dark">
+                    <div class="card-header text-center">
+                        <h4 class="text-danger">Units Converter</h4>
+                        <small class="lead text-danger">Celcius to fahrenheit</small>
+
+
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="input" class="text-danger mb-2">Celcius value</label>
+                                <div class="input-group">
+                                    
+                                    <input type="text" class="form-control" name="input" id="inputcf"
+                                        >
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">deg</span>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="form-group text-center mt-3">
+                                <button class="btn btn-outline-danger" onclick="convertcf()"
+                                    type="button">Convert</button>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="output" id="outputcf"
+                                    placeholder="Fahrenheit value">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function convert() {
+            const cmVal = Number(document.getElementById("input").value);
+            const result = cmVal / 2.54;
+            const inVal = document.getElementById("output").value = result+" inches";
+        }
+
+        function convertcf() {
+            const celVal = Number(document.getElementById("inputcf").value);
+            const result = (celVal * 9 / 5) + 32;
+            const FarVal = document.getElementById("outputcf").value = result+" celcius";
+        }
+
+        // str1 = " we are  one "
+        // str2 = "Hello People  "
+        // let b = "rs.43";
+
+        // Challenge : pick random character from name.
+        // let name = "gunesh";
+        // // O/P
+        // name[Math.floor(Math.random()*5)+1];
+
+        // let fname = "Gunesh";
+        // let lname = "murugesan";
+        // let loc = "Coimbatore";
+
+        let a = "5";
+        let b = "$95";
+
+        console.log(`"you have ${a} items cart.
+        Your bill amount is ${b}"`)
+
+
+        let ara = ["a", "b", "c", "d", "e"];
+
+        let tdarr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+        tdarr[tdarr.length - 1][[tdarr.length - 2]];
+
+        let arr1 = [8,5,6,9,45];
+        let arr2 = [8,5,1,2,4,7];
+        let arr = [5,8,10,7,9,11];
+        
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

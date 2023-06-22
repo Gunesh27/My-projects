@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Digital-7';
+    src: url('digital-7.ttf');
+  }
+
+.card{
+    margin-top: 30px;
+    width: 400px;
+}
+
+.time{
+    font-size: 1.5rem;
+}
+#timeRef{
+    font-size: 40px;
+    font-family: 'Digital-7';
+}
+.btn{
+    margin: 0px 10px;
+}

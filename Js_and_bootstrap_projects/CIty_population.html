@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>City stats</title>
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <div class="card bg-dark text-light">
+                    <div class="card-header">
+                        <h1 class="card-text text-success text-center">City stats</h1>
+                    </div>
+                    <div class="card-body">
+                        <form action="/" method="post" id="form">
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <label for="citylist" class="h5" style="padding-left: 50px;">City</label>
+                                </div>
+                                <div class="col-sm-6">
+
+                                    <select class="form-select" id="input">
+                                        <option class="dropdown-item">--Select--</option>
+                                        <option class="dropdown-item" value="Coimbatore">Coimbatore</option>
+                                        <option class="dropdown-item" value="Dindigul">Dindigul</option>
+                                        <option class="dropdown-item" value="Chennai">Chennai</option>
+                                        <option class="dropdown-item" value="Madurai">Madurai</option>
+                                        <option class="dropdown-item" value="Salem">Salem</option>
+                                    </select>
+
+
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <div class="text-center">
+                                    <button class="btn btn-outline-primary" type="button">Get stats</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        const button = document.querySelector("button");
+        const stat = document.createElement("div");
+        stat.id = "result";
+        document.getElementById("form").appendChild(stat);
+        button.addEventListener('click', stats)
+        function stats() {
+            let input = document.getElementById("input");
+            let city = input.options[input.selectedIndex].value;
+            let population = "";
+            let literacyRate = "";
+            let language = "";
+
+            switch (city) {
+                case 'Coimbatore':
+                    population = "3,009,000";
+                    literacyRate = "91.30 %";
+                    language = "Tamil";
+                    break;
+                case 'Dindigul':
+                    population = "418,000";
+                    literacyRate = "90.22 %";
+                    language = "Tamil";
+                    break;
+                case 'Chennai':
+                    population = "11,933,000";
+                    literacyRate = "90.18 %";
+                    language = "Tamil";
+                    break;
+                case 'Madurai':
+                    population = "1,834,000";
+                    literacyRate = "90.55 %";
+                    language = "Tamil";
+                    break;
+                case 'Salem':
+                    population = "1,170,000";
+                    literacyRate = "84.42 %";
+                    language = "Tamil";
+                    break;
+            }
+            let text = `The ${city} has population of ${population} with litracy rate ${literacyRate}. And they Speak ${language}`
+            console.log(text);
+
+            let output = document.querySelector("#result").innerHTML=text;
+        }
+
+
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+#list{
+    height: 250px;
+ }
+ #head{
+    color: rgb(212, 204, 116);
+}
+.row>.btn{
+    box-sizing: border-box;
+}
+

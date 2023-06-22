@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Calculator</title>
+    <style>
+        /* .container{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        color: rgb(154, 165, 87);
+       } */
+        .btn {
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-between">
+                <div id="head">
+                    <h1>Color Flipper</h1>
+                </div>
+                <div class="h1" id="colorCode">
+                    #ffffff
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container vh-100 vw-100" id="window">
+        <div class="row">
+            <div class="d-grid justify-content-center">
+                <button id = "btn"class="btn btn-danger btn-lg" onclick="colorFlipper()">Clickme</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let colorText = document.getElementById("colorCode");
+        let bg = document.getElementById("window");
+        let button = document.getElementById("btn");
+        let code = [1,2,3,4,5,6,7,8,9,0,"a","b","c","d","e","f"];
+        
+        
+        function colorFlipper(){
+            let hexCode = "#";
+            for (i=0;i<6;i++){
+                hexCode += getCode();
+            }
+            bg.style.backgroundColor=hexCode;
+        colorText.innerHTML = hexCode;
+        }
+
+        function getCode(){
+            let randomCode = Math.floor(Math.random()*16);
+            return code[randomCode];
+        }
+        
+
+
+
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
